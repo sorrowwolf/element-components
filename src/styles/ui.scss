@@ -1,0 +1,7 @@
+// 修改组件库内部样式
+.s-choose-icon-el-dialog-body {
+  .el-dialog__body {
+    height: 500px;
+    overflow-y: scroll;
+  }
+}
