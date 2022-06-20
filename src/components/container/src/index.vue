@@ -15,9 +15,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import navHeader from './navHeader/index.vue';
-import navSide from './navSide/index.vue';
+import { ref } from "vue"
+import navHeader from './navHeader/index.vue'
+import navSide from './navSide/index.vue'
 
 const collapse = ref(false);
 
