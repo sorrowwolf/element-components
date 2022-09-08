@@ -38,8 +38,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./release.tgz
-        asset_name: release.tgz
+        asset_path: ./release.tar.gz
+        asset_name: release.tar.gz
         asset_content_type: application/x-tgz
 
     # 部署到服务器
@@ -52,5 +52,5 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /usr/local/Nginx/html
-          wget https://github.com/sorrowwolf/element-components/releases/latest/download/release.tgz -O release.tgz
-          tar zxvf release.tgz
+          wget https://github.com/sorrowwolf/element-components/releases/latest/download/release.tgz -O release.tar.gz
+          tar -xzf release.tar.gz
