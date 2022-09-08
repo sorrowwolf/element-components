@@ -53,5 +53,5 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /usr/local/Nginx/html
-          wget https://github.com/sorrowwolf/element-components/releases/latest/download/release.tgz -O release.tar.gz
+          wget https://github.com/sorrowwolf/element-components/releases/latest/download/release.tar.gz -O release.tar.gz
           tar -xzf release.tar.gz
